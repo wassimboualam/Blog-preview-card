@@ -1,0 +1,96 @@
+:root {
+    --yellow:hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+    --x-pad: 10px;
+    --gap: 20px;
+    --p-font: 16px;
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(Figtree/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    text-align: center;
+    font-family: Figtree;
+    font-size: 16px;
+    height: 100%;
+    background-color: var(--yellow);
+}
+
+main, #illustration {
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    width: 348px;
+    height: 522px;
+    margin: auto;
+    margin-top: calc((100vh - 522px) / 2);
+    margin-bottom: 10px;
+    padding-left: var(--x-pad);
+    padding-right: var(--x-pad);
+    background-color: var(--white);
+    border: 1px solid black;
+    box-shadow: 10px 10px 0px black;
+    text-align: left;
+}
+
+
+
+#illustration {
+    display: block;
+    margin: auto;
+    margin-top: var(--gap);
+}
+
+#text {
+    margin-bottom: 10px;
+}
+
+h4, span {
+    padding: 6px;
+}
+
+h4 {
+    padding-left: 0%;
+    margin-bottom: 10px;
+}
+
+span {
+    background-color: var(--yellow);
+    font-size: 0.9em;
+}
+
+time {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--grey);
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+#author {
+    margin-right: auto;
+    margin-bottom: var(--gap);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
