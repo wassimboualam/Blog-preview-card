@@ -4,7 +4,7 @@
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
     --mar-top:calc((100vh - 522px) / 2);
-    --gap: 24px;
+    --gap: 20px;
 }
 
 @font-face {
@@ -45,24 +45,26 @@ main {
 
 
 
-#illustration {
-    
-    margin-top: var(--gap);
-}
 
 /* #text div styles */
 
 #text {
     width: 336px;
     height: 194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h4, span {
     padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h4 {
     padding-left: 0%;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -71,26 +73,23 @@ span {
     font-size: 0.9em;
 }
 
-time {
+#time {
     display: block;
     font-size: 0.8em;
-    margin-bottom: 15px;
 }
 
 h1 {
-    margin-bottom: 15px;
     font-size: 1.5em;
 }
 
 p {
     color: var(--grey);
-    font-size: 0.9em;
     font-weight: 300;
+    margin-top: 0%;
 }
 
 #author {
     margin-right: auto;
-    margin-bottom: var(--gap);
     display: flex;
     align-items: center;
     justify-content: start;
@@ -118,6 +117,7 @@ h4:hover > span{
     main {
         width: 279px;
         height: 453px;
+        padding: 16px;
     }
     #illustration, #text {
         width: 279px;
