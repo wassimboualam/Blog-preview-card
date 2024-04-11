@@ -3,9 +3,9 @@
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
+    --mar-top:calc((100vh - 522px) / 2);
     --x-pad: 10px;
     --gap: 20px;
-    --p-font: 16px;
 }
 
 @font-face {
@@ -34,13 +34,13 @@ main {
     width: 348px;
     height: 522px;
     margin: auto;
-    margin-top: calc((100vh - 522px) / 2);
+    margin-top: var(--mar-top);
     margin-bottom: 10px;
     padding-left: var(--x-pad);
     padding-right: var(--x-pad);
     background-color: var(--white);
-    border: 1px solid black;
-    box-shadow: 10px 10px 0px black;
+    border: 1px solid var(--black);
+    box-shadow: 10px 10px 0px var(--black);
     text-align: left;
 }
 
@@ -94,3 +94,20 @@ p {
     justify-content: start;
     gap: 10px;
 }
+
+/* Hover mode */
+main:hover {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: 15px 15px 0px var(--black);
+}
+
+#text > *:hover , strong:hover{
+    color : var(--yellow);
+}
+
+h4:hover , span:hover{
+    color: initial;
+}
+
